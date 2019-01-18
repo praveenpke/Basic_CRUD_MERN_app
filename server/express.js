@@ -7,6 +7,9 @@ import compress from "compression";
 import cors from "cors";
 import helmet from "helmet";
 
+//load html template
+import Template from "./../template";
+
 const app = express();
 
 //using middlewares
@@ -16,6 +19,11 @@ app.use(cookieParser());
 app.use(compress());
 app.use(helmet());
 app.use(cors());
+
+//basic route
+app.get("/", (req, res) => {
+  res.status(200).send(Template());
+});
 
 // configure express
 
