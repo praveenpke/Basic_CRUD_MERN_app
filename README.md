@@ -15,3 +15,4 @@
 1. npm init
    2.npm install --save-dev babel-core babel-loader babel-preset-env babel-preset-stage-2 webpack webpack-cli webpack-node-externals nodemon
    3.config file webpack.server.config
+   4.npm install body-parser cookie-parser compression helmet cors --save
